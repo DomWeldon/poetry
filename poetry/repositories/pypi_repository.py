@@ -84,7 +84,7 @@ class PyPiRepository(Repository):
 
     @property
     def authenticated_url(self):  # type: () -> str
-        return self._url
+        return self._url + "/simple"
 
     def find_packages(
         self,
